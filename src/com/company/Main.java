@@ -7,10 +7,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int [] MyAverage = {23, 6, 47, 35, 2, 14};
-        int a = MyAverage[0] + MyAverage[1]+ MyAverage[2] + MyAverage[3] + MyAverage[4] + MyAverage[5];
-        System.out.println("The sum of arrays is " + a);
-        int average = a / MyAverage.length;
+        int [] MyAverage = new int []{23, 6, 47, 35, 2, 14};
+        double sum = 0;
+        double average;
+
+        for (int i = 0; i<MyAverage.length; i++) {
+            sum = sum + MyAverage[i]; // sum += MyAverage[i]
+
+        }
+        System.out.println("The sum of the numbers in array is: " +sum);
+
+        average = sum / MyAverage.length;
         System.out.println("The average of all array numbers is " + average);
 
 
